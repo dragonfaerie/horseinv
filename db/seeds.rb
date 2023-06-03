@@ -10,4 +10,7 @@ Manufacturer.create( manufacturer: "Breyer")
 Manufacturer.create(manufacturer: "Peter Stone")
 Manufacturer.create(manufacturer: "Resin")
 
-Horse.create(make: '1', mold: 'Nakota', released_as: 'Shelby', breed: 'Mustang', pattern: 'Blanket Appaloosa', gender: 'Stallion', finish: 'OF', size: 'Traditional', user_id: 1, location: 'Living Room Shelves', verified: true, office_pony: 'June 2023', purchase_price: 175, condition: 'excellent' )
+Horse.create(make: '1', mold: 'Nakota', released_as: 'Shelby', breed: 'Mustang', 
+pattern: 'Blanket Appaloosa', gender: 'Stallion', finish: 'OF', size: 'Traditional', 
+user_id: 1, location: 'Living Room Shelves', verified: true, office_pony: 'June 2023', 
+purchase_price: 175, condition: 'excellent' )
