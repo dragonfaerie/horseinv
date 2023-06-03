@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  make: 1
+  mold: MyString
+  released_as: MyString
+
+two:
+  make: 1
+  mold: MyString
+  released_as: MyString

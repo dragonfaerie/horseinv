@@ -1,0 +1,11 @@
+<h1>All the ponies</h1>
+
+<div class="horseContainer">
+  <% @horses.each do |horse| %>
+    <div class="horseItem">
+      <img src="https://picsum.photos/200">
+      <p><%= horse.mold %></p>
+      <p><%= link_to horse.released_as, horse_path(horse) %></p>
+    </div>
+  <% end %>
+</div>
