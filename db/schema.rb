@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_03_205202) do
+ActiveRecord::Schema.define(version: 2023_06_04_210754) do
+
+  create_table "breeds", force: :cascade do |t|
+    t.string "breed"
+    t.string "breed_group"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "horses", force: :cascade do |t|
     t.integer "make"
@@ -29,6 +36,7 @@ ActiveRecord::Schema.define(version: 2023_06_03_205202) do
     t.string "condition"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "color"
   end
 
   create_table "manufacturers", force: :cascade do |t|
@@ -44,6 +52,7 @@ ActiveRecord::Schema.define(version: 2023_06_03_205202) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "is_admin"
   end
 
 end

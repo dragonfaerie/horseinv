@@ -1,3 +1,3 @@
 class Breed < ApplicationRecord
-    belongs_to :horse
+    # belongs_to :horse
 end

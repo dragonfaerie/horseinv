@@ -1,0 +1,102 @@
+$primary: #334455;
+$secondary: #9966FF;
+$grey: #DDDDDD;
+$white: #DDEEFF;
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica, verdana, arial, sans-serif;
+    font-size: larger;
+}
+
+div {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: $primary;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    color: $white;
+    border: 2px solid $white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    font-size: 20px;
+}
+
+.horseContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+.horseItem {
+    background-color: $primary;
+    color: $white;
+    margin: 10px;
+    text-align: center;
+}
+
+.horseDetails {
+    text-align: center;
+}
+
+.reverseButton {
+    color: $primary;
+    border: 2px solid $primary;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.formDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    background-color: $grey;
+}
+
+.footer {
+    background-color: $primary;
+    color: $white;
+    font-size: small;
+    padding: 15px;
+    text-align: center;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+}
+
+.right {
+    width: 50%;
+    text-align: right;
+}
