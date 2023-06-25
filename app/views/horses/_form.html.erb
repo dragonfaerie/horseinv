@@ -1,47 +1,47 @@
 <%= form_with(model: horse, local: true) do |f| %>
-    <div class="formDetails">
-      <%= f.label :make %>
-      <%= f.collection_select :make, Manufacturer.order(:make), :id, :make %>
-  
-      <%= f.label :mold %>
-      <%= f.text_field :mold %>
-  
-      <%= f.label :released_as %>
-      <%= f.text_field :released_as %>
-  
-      <%= f.label :breed %>
-      <%= f.collection_select :breed, Breed.order(:name), :id, :name %>
-  
-      <%= f.label :color %>
-      <%= f.text_field :color %>
-  
-      <%= f.label :pattern %>
-      <%= f.text_field :pattern %>
-  
-      <%= f.label :gender %>
-      <%= f.text_field :gender %>
-  
-      <%= f.label :finish %>
-      <%= f.text_field :finish %>
-  
-      <%= f.label :size %>
-      <%= f.text_field :size %>
-  
-      <%= f.label :location %>
-      <%= f.text_field :location %>
-  
-      <%= f.label :verified %>
-      <%= f.check_box :verified %>
-  
-      <%= f.label :office_pony %>
-      <%= f.text_field :office_pony %>
-  
-      <%= f.label :purchase_price %>
-      <%= f.number_field :purchase_price %>
-  
-      <%= f.label :condition %>
-      <%= f.text_field :condition %>
-  
-      <%= f.submit %>
-    </div>
-  <% end %>
+  <div class="formDetails">
+    <%= f.label :make %>
+    <%= f.collection_select :make, Manufacturer.order(:make), :id, :make %>
+
+    <%= f.label :mold %>
+    <%= f.text_field :mold %>
+
+    <%= f.label :released_as %>
+    <%= f.text_field :released_as %>
+
+    <%= f.label :breed %>
+    <%= f.collection_select :breed, Breed.order(:breed), :id, :breed %>
+
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+
+    <%= f.label :pattern %>
+    <%= f.text_field :pattern %>
+
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+
+    <%= f.label :finish %>
+    <%= f.text_field :finish %>
+
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+
+    <%= f.label :verified %>
+    <%= f.check_box :verified %>
+
+    <%= f.label :office_pony %>
+    <%= f.text_field :office_pony %>
+
+    <%= f.label :purchase_price %>
+    <%= f.number_field :purchase_price %>
+
+    <%= f.label :condition %>
+    <%= f.text_field :condition %>
+
+    <%= f.submit %>
+  </div>
+<% end %>
