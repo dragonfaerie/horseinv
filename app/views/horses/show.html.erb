@@ -5,7 +5,7 @@
 <!--  TODO: Actual pictures-->
   <img src="https://picsum.photos/200">
   <h3><%= @make.make %> <%= @horse.mold %></h3>
-  <p><%= @breed.name %> <%= @horse.color %> <%= @horse.pattern %> <%= @horse.gender %></p>
+  <p><%= @breed.breed %> <%= @horse.color %> <%= @horse.pattern %> <%= @horse.gender %></p>
   <p><%= @horse.size %> <%= @horse.finish %></p>
   <div class="horseButtons">
     <%= link_to "Edit", edit_horse_path(@horse), class: "reverseButton" %>
