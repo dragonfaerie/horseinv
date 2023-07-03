@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_25_204956) do
+ActiveRecord::Schema.define(version: 2023_07_03_201124) do
 
   create_table "breeds", force: :cascade do |t|
     t.string "breed"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2023_06_25_204956) do
 
   create_table "horses", force: :cascade do |t|
     t.integer "make"
-    t.string "mold"
+    t.integer "mold"
     t.string "released_as"
     t.integer "breed"
     t.string "pattern"
@@ -43,6 +43,12 @@ ActiveRecord::Schema.define(version: 2023_06_25_204956) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "make"
+  end
+
+  create_table "molds", force: :cascade do |t|
+    t.string "mold"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|

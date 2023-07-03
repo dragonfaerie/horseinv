@@ -1,0 +1,2 @@
+class Mold < ApplicationRecord
+end

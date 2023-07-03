@@ -4,8 +4,8 @@
     <%= f.collection_select :make, Manufacturer.order(:make), :id, :make %>
 
     <%= f.label :mold %>
-    <%= f.text_field :mold %>
-
+    <%= f.collection_select :mold, Mold.order(:mold), :id, :mold %>
+    
     <%= f.label :released_as %>
     <%= f.text_field :released_as %>
 
