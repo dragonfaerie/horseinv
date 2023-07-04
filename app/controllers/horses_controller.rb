@@ -8,6 +8,7 @@ class HorsesController < ApplicationController
     @horse = Horse.find(params[:id])
     @make = Manufacturer.find_by(id: @horse.make)
     @breed = Breed.find_by(id: @horse.breed)
+    @mold = Mold.find_by(id: @horse.mold)
   end
 
   def new

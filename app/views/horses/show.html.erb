@@ -4,9 +4,21 @@
   <h2><%= @horse.released_as %></h2>
 <!--  TODO: Actual pictures-->
   <img src="https://picsum.photos/200">
-  <h3><%= @make.make %> <%= @horse.mold %></h3>
-  <p><%= @breed.breed %> <%= @horse.color %> <%= @horse.pattern %> <%= @horse.gender %></p>
+  <h3><%= @make.make %> <%= @mold.mold %></h3>
+
+  <p>
+    <%= @breed.breed %> 
+    <%= @horse.color %> 
+    <% if @horse.pattern != "None" %>
+      <%= @horse.pattern %> 
+    <% end %>
+    <%= @horse.gender %>
+  </p>
+
   <p><%= @horse.size %> <%= @horse.finish %></p>
+  <p><%= @horse.location %></p>
+  <p><%= @horse.office_pony %></p>
+  <p><%= @horse.condition %><p>
   <div class="horseButtons">
     <%= link_to "Edit", edit_horse_path(@horse), class: "reverseButton" %>
   </div>

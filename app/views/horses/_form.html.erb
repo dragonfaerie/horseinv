@@ -4,8 +4,8 @@
     <%= f.collection_select :make, Manufacturer.order(:make), :id, :make %>
 
     <%= f.label :mold %>
-    <%= f.text_field :mold %>
-
+    <%= f.collection_select :mold, Mold.order(:mold), :id, :mold %>
+    
     <%= f.label :released_as %>
     <%= f.text_field :released_as %>
 
@@ -13,19 +13,19 @@
     <%= f.collection_select :breed, Breed.order(:breed), :id, :breed %>
 
     <%= f.label :color %>
-    <%= f.text_field :color %>
+    <%= f.select :color, Horse::COLOR, prompt: "Pick One" %>
 
     <%= f.label :pattern %>
-    <%= f.text_field :pattern %>
+    <%= f.select :pattern, Horse::PATTERN, prompt: "Pick One" %>
 
     <%= f.label :gender %>
-    <%= f.text_field :gender %>
-
+    <%= f.select :gender, Horse::GENDER, prompt: "Pick One" %>
+    
     <%= f.label :finish %>
-    <%= f.text_field :finish %>
+    <%= f.select :finish, Horse::FINISH, prompt: "Pick One" %>
 
     <%= f.label :size %>
-    <%= f.text_field :size %>
+    <%= f.select :size, Horse::SIZE, prompt: "Pick One" %>
 
     <%= f.label :location %>
     <%= f.text_field :location %>
@@ -40,8 +40,8 @@
     <%= f.number_field :purchase_price %>
 
     <%= f.label :condition %>
-    <%= f.text_field :condition %>
-
+    <%= f.select :condition, Horse::CONDITION, prompt: "Pick One" %>
+    
     <%= f.submit %>
   </div>
 <% end %>
