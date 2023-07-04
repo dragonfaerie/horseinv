@@ -41,13 +41,10 @@ class Horse < ApplicationRecord
         message: "Please choose a valid finish"
     }
 
+    CONDITION = ["Excellent", "Good", "Poor"]
 
-    # validates :title, :released_on, :duration, presence: true
-    # validates :total_gross, numericality: { greater_than_or_equal_to: 0 }
-
-    # t.string "location"
-    # t.boolean "verified"
-    # t.string "office_pony"
-    # t.integer "purchase_price"
-    # t.string "condition"
+    validates :condition, inclusion: {
+        in: CONDITION,
+        message: "Please choose a valid conditon"
+    }
 end

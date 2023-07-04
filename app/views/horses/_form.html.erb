@@ -40,8 +40,8 @@
     <%= f.number_field :purchase_price %>
 
     <%= f.label :condition %>
-    <%= f.text_field :condition %>
-
+    <%= f.select :condition, Horse::CONDITION, prompt: "Pick One" %>
+    
     <%= f.submit %>
   </div>
 <% end %>
