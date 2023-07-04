@@ -13,14 +13,14 @@
     <%= f.collection_select :breed, Breed.order(:breed), :id, :breed %>
 
     <%= f.label :color %>
-    <%= f.text_field :color %>
+    <%= f.select :color, Horse::COLOR, prompt: "Pick One" %>
 
     <%= f.label :pattern %>
-    <%= f.text_field :pattern %>
+    <%= f.select :pattern, Horse::PATTERN, prompt: "Pick One" %>
 
     <%= f.label :gender %>
-    <%= f.text_field :gender %>
-
+    <%= f.select :gender, Horse::GENDER, prompt: "Pick One" %>
+    
     <%= f.label :finish %>
     <%= f.text_field :finish %>
 
