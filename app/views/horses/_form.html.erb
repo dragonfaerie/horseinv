@@ -22,10 +22,10 @@
     <%= f.select :gender, Horse::GENDER, prompt: "Pick One" %>
     
     <%= f.label :finish %>
-    <%= f.text_field :finish %>
+    <%= f.select :finish, Horse::FINISH, prompt: "Pick One" %>
 
     <%= f.label :size %>
-    <%= f.text_field :size %>
+    <%= f.select :size, Horse::SIZE, prompt: "Pick One" %>
 
     <%= f.label :location %>
     <%= f.text_field :location %>

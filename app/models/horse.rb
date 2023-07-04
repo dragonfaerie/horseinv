@@ -27,15 +27,24 @@ class Horse < ApplicationRecord
         message: "Please choose a valid gender"
     }
 
+    SIZE = ["Traditional", "Classic", "Stablemate"]
+
+    validates :size, inclusion: {
+        in: SIZE,
+        message: "Please choose a valid size"
+    }
+
+    FINISH = ["Original Finish", "Custom"]
+
+    validates :finish, inclusion: {
+        in: FINISH,
+        message: "Please choose a valid finish"
+    }
+
 
     # validates :title, :released_on, :duration, presence: true
     # validates :total_gross, numericality: { greater_than_or_equal_to: 0 }
-    
 
-    # t.string "gender"
-    # t.string "finish"
-    # t.string "size"
-    # t.integer "user_id"
     # t.string "location"
     # t.boolean "verified"
     # t.string "office_pony"
