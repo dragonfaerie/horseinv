@@ -1,0 +1,9 @@
+<h1>All the molds</h1>
+
+<div class="horseContainer">
+    <% @molds.each do |mold| %>
+        <div class="horseItem">
+        <p><%= link_to @mold.mold, mold_path(mold) %></p>
+        </div>
+    <% end %>
+</div>

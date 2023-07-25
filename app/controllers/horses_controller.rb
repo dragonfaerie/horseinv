@@ -28,15 +28,16 @@ class HorsesController < ApplicationController
 
   def update
     @horse = Horse.find(params[:id])
-    if @horse.update(horse_params)
-      redirect_to @horse
-    else
-      render :edit
-    end
+    @horse.update(horse_params)
+    redirect_to @horse
+  end
+
+  def edit
+    @horse = Horse.find(params[:id])
   end
 
   # TODO:destroy horse
   def horse_params
-    params.require(:horse).permit(:make, :mold, :released_as, :breed, :color, :pattern, :gender, :finish, :size, :user_id, :location, :verified, :office_pony, :purchase_price, :condition)
+    params.require(:horse).permit!
   end
 end
