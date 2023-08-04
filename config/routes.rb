@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: "horses#index"
+  
   resource :session, only: [ :new, :create, :destroy]
   get "signin" => "sessions#new"
 
