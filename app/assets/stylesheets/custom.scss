@@ -49,16 +49,20 @@ input {
 
 .horseContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: 2px solid blue;
 }
 
 .horseItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
     background-color: $primary;
     color: $white;
     margin: 10px;
-    text-align: center;
 }
 
 .horseDetails {
@@ -71,6 +75,7 @@ input {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+
 }
 
 .formDetails {
